@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import logoImg from "../../public/pemberton-landscaping-logo.png";
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/pemberton-landscaping-logo.png"
+          src={logoImg}
           alt="Pemberton Landscaping Logo"
           width={200}
           height={200}
