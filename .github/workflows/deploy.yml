@@ -30,16 +30,16 @@ jobs:
         shell: bash
         if: steps.cache_dependencies.outputs.cache-hit != 'true'
         run: npm ci
+      
+      - name: Build with Next.js 🏗️
+        run: | 
+          npx next build
+          ls -a
 
       - name: Setup Pages ⚙️
         uses: actions/configure-pages@v4
         with:
           static_site_generator: next
-
-      - name: Build with Next.js 🏗️
-        run: | 
-          npx next build
-          ls -a
 
       - name: List dirs
         run: ls -a
