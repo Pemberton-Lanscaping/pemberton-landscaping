@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/pemberton-landscaping",
   output: "export",
   reactStrictMode: true,
+  distDir: 'build',
 };
 
 export default nextConfig;
