@@ -12,6 +12,7 @@ export default function Home() {
           alt="Pemberton Landscaping Logo"
           width={200}
           height={200}
+          unoptimized
           priority
         />
       </div>
