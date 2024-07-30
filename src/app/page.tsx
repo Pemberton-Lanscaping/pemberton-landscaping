@@ -29,7 +29,7 @@ export default function Home() {
           alignItems="center"
           justifyContent="center"
         >
-          <Grid item xs={12} text>
+          <Grid item xs={12}>
             <Button variant="outline" href="tel:6049618558">
               <PhoneIcon fontSize="large"/>
             </Button>
