@@ -30,7 +30,7 @@ export default function Home() {
           justifyContent="center"
         >
           <Grid item xs={12}>
-            <Button variant="outline" href="tel:6049618558">
+            <Button variant="outlined" href="tel:6049618558">
               <PhoneIcon fontSize="large"/>
             </Button>
           </Grid>
