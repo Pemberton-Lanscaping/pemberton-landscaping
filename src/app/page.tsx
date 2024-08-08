@@ -35,7 +35,7 @@ export default function Home() {
             priority
           />
           <ul style={{listStyleType: "none", paddingInlineStart: "0px"}}>
-              <li><h4>Garden installs</h4></li>
+              <li><h4>Garden Installs</h4></li>
               <li><h4>Renovations</h4></li>
               <li><h4>Maintenance</h4></li>
               <li><h4>Patios</h4></li>
