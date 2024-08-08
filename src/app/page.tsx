@@ -10,12 +10,12 @@ import Typography from '@mui/material/Typography';
 
 
 import { ThemeProvider } from '@mui/material/styles';
-import {darkTheme, lightTheme} from './theme';
+import {theme} from './theme';
 
 export default function Home() {
 
   return (
-    <ThemeProvider theme={lightTheme}>
+    <ThemeProvider theme={theme}>
       <main className={styles.main}>
         <Grid 
           container
