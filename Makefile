@@ -3,7 +3,7 @@ build:
 	npx next build
 
 run: 
-	npx next develop
+	npm run dev
 
 clean: 
 	rm -rf build

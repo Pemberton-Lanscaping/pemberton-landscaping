@@ -6,12 +6,25 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+
+
+import { ThemeProvider } from '@mui/material/styles';
+import {darkTheme, lightTheme} from './theme';
 
 export default function Home() {
+
   return (
+    <ThemeProvider theme={lightTheme}>
       <main className={styles.main}>
-        <div className={styles.center}>
+        <Grid 
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+        >
           <Image
             className={styles.logo}
             src={logoImg}
@@ -21,20 +34,30 @@ export default function Home() {
             unoptimized
             priority
           />
-        </div>
-        <p>Landscaping installs, construction, renovations and maintenance from Pemberton and Whistler.</p> 
-        <Grid container
-          spacing={0}
-          direction="column"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <Grid item xs={12}>
-            <Button variant="outlined" href="tel:6049618558">
-              <PhoneIcon fontSize="large"/>
-            </Button>
-          </Grid>
+          <ul style={{listStyleType: "none", paddingInlineStart: "0px"}}>
+              <li><h4>Garden installs</h4></li>
+              <li><h4>Renovations</h4></li>
+              <li><h4>Maintenance</h4></li>
+              <li><h4>Patios</h4></li>
+              <li><h4>Hardscaping</h4></li>
+          </ul>
         </Grid>
+
+        <Paper elevation={0} sx={{position: 'fixed', bottom: 0, left: 0, right: 0, padding: 3}}>
+          <Grid container
+            spacing={0}
+            direction="column"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Grid item xs={12}>
+              <Button variant="contained" href="tel:6049618558">
+                <PhoneIcon fontSize="large"/>
+              </Button>
+            </Grid>
+          </Grid>
+        </Paper>
       </main>
+    </ThemeProvider>
   );
 }
