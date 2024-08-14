@@ -50,12 +50,13 @@ export default function Home() {
             alignItems="center"
             justifyContent="center"
           >
-            <Grid item xs={12}>
+            <Grid item xs={10}>
               <Button variant="contained" href="tel:6049618558">
                 <PhoneIcon fontSize="large"/>
               </Button>
             </Grid>
           </Grid>
+            <Typography variant={"caption"}> 9101 Riverside Drive, Whistler BC </Typography>
         </Paper>
       </main>
     </ThemeProvider>
